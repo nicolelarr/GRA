@@ -9,36 +9,49 @@
 	<style>
 	
 		body{
-			background-color:black; 
+			background-image: linear-gradient(black, #010A26);
 			
 		}
 		
 		Wrapper{
- 	width: 1300px;
+ 	width: 1199px;
 	Display: block;
 	Margin: auto; 
 		}
 		
 		header{
-			height: 90px; 
+			height: 150px; 
 			text-align: center;
+			
+	  
 			
 		}
 		
 		button{
-			   width: 180px;
-        height: 80px;
+			   width: 210px;
+        height: 150px;
         display: inline-block;
 	 margin: auto; 
 			font-family:"Alice in Wonderland";
 			font-size:40px;
 			background-color: transparent; 
 			color:#F2BE5C; 
+			border-color: transparent;
+			
 		}
 				
 			button:hover{
-			color:white;
-				background-color:#F2BE5C; }
+		background-image: url("Cheshire_head.webp"); 
+			background-size:cover;
+			background-position:center;
+			color:transparent;
+				height: 150px;
+				width: 200px;
+				transform: scale(0.85)
+			
+				
+				
+		}
 		
 		.banner{
 		    max-width: 100%; 
@@ -48,42 +61,152 @@
 			margin-right: auto;
 			margin-top: auto;
 			border-radius: 15px;
-			padding-top:30px;
+		
 			padding-bottom: 60px;
 		}
 		
 		
 		.cover{
 			display: block;
-			padding-left: 100px;
+			padding-left:30px;
 			float:left; 
-			padding-right: 100px;
+			padding-right: 90px;
 			
 		}
 			
 		.summary{
 			color:white;
 			font-family:"Alice in Wonderland";
-			font-size:30px;
-			display:block; 
+			font-size:25px;
+			display:block;
+			line-height: 50px;
+			text-align: justify;
+			
 			
 		}
 		
 			
 		div{ 
-		height: 700px; 
-	 width: 1300px;
+		height: 590px; 
+	 width: auto;
+			padding-right: 20px;
+			padding-left: 20px;
+			margin-top:-10px;
 			
+		
+		}
+		
+		.trailer{
+			margin: auto; 
+			padding-top: 100px;
+			padding-left:50px; 
+		}
+		
+		h1{
+			color:#F2BE5C; 
+			font-family:"Alice in Wonderland";
+			font-size: 45px;
+			text-align: center;
+			margin-top:-20px;
+			padding-top: 20px;
+			
+		}
+			
+			
+		h2{
+			color:#F2BE5C; 
+			font-family:"Alice in Wonderland";
+			font-size: 45px;
+			text-align: center;
+			margin-top:-100px;
+		
+		}
+		
+		iframe{
+			display: block;
+ 	 margin-left: auto;
+  	margin-right: auto;
 			
 		}
 		
+		
+		
+		.rabbit{
+			display: inline;
+			 transform: translate(590px, -180px);
+			
+		}
+		
+		.cat2{
+			transform: translate(130px, -604px); 
+		}
+		
+		.divider{
+		 height:41px;
+			margin:auto; 
+			padding-bottom: 15px;
+			margin-top: -35px;
+			margin-bottom: 35px; 
+			background-image: url("divider.png");
+			background-size: contain;	 
+			
+		}
+		
+		.divider2{
+		 height:41px;
+			margin:auto; 
+			padding-bottom: 15px;
+			margin-top: -35px;
+			
+			background-image: url("divider.png");
+			background-size: contain;	 
+			
+		}
+		
+		
+		h3{
+			color:#F2BE5C; 
+			font-family:"Alice in Wonderland";
+			font-size: 45px;
+			text-align: center;
+			padding-left: 50px;
+			margin-top:-30px;
+		 
+			
+		
+			
+		}
+		
+		.divqueen {
+			display: inline-block; 
+			padding-top: 30px; 
+			padding-bottom: 10px;
+			width:1000px;
+			height: 700px;
+			text-align: center;
+			padding-left: 100px;
 			
 			
 		
+		}
+		
+		.spotify{
+			float: right;
+		}
+		
+		.queen{
+			display: inline;
+			 transform: translate(50px, 172px);
+		}
 		
 		footer{
-			color: black; 
+			color: white; 
 			text-align: center;
+			background-color: black;
+			height: 100px;
+			width: 100%;
+			padding-top: 10px;
+	
 		}
 		
 	</style>
@@ -100,6 +223,7 @@
 		<button> Gallery </button>
     <button>Tickets</button>
 		
+			 
 		
 	</header>
 	
@@ -109,7 +233,7 @@
 	
 	
 	<banner> 
-		<img src="banner2.png" class="banner" alt />
+	<img src="banner2.png" class="banner" alt />	
 
 	</banner>
 	
@@ -117,26 +241,58 @@
 	
 	<main>  
 		
-		<img src="moviecover.jpeg" class="cover" alt />;
+		<div class="divider"> 
+		
+		</div>
+		
+	
+		
+		<img src="moviecover.jpeg" alt class="cover" height="500" />;
 		
 		
-		
+	<h1>About</h1>
 		<div class="summary">A young girl when she first visited magical Underland, Alice Kingsleigh is now a teenager with no memory of the place -- except in her dreams. Her life takes a turn for the unexpected when, at a garden party for her fiance and herself, she spots a certain white rabbit and tumbles down a hole after him. Reunited with her friends the Mad Hatter, the Cheshire Cat and others, Alice learns it is her destiny to end the Red Queen's reign of terror. </div>
+	
 		
+		<div class="trailer"> 
+		<h2>Trailer</h2>
 	
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/P_IVeP3i7B0?si=XnZ9XTyBxV9YoOEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			
+	<iframe width="770" height="415" src="https://www.youtube.com/embed/P_IVeP3i7B0?si=XnZ9XTyBxV9YoOEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			
+				<img src="cat2.png" class="cat2" height="230" alt/> 
+		
+		<img src= "Adobe Express - file.png" alt class="rabbit" width="200" />
+		</div>
 	
 	
+		
+		<div class="divqueen">
+			<h3> Soundtrack</h3>
+			
+		<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4HcpykTFR8ZfyyrOX9jNJo?utm_source=generator&theme=0" width="63%" height="552" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" class="spotify"></iframe>
+		
+		<img src="queen.png" height="380px" class="queen" alt/>
+		
+		</div>
 	
+		
+		
 	</main>
+	
+	
+	</wrapper>
+	
+	
+	<div class="divider2"> 
+		
+		</div>
 	
 	  <footer>
 	 <p> &copy; 2025, Nicole Larrosa.</p>
     <p>
       This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
   </footer>
-	
-	</wrapper>
 	
 </body>
 </html>

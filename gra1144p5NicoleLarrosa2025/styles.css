@@ -1,0 +1,146 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: -webkit-linear-gradient(0deg,rgba(0,0,0,1.00) 0%,rgba(58,15,90,0.85) 51.48%,rgba(0,0,0,1.00) 100%);
+    background-image: -moz-linear-gradient(0deg,rgba(0,0,0,1.00) 0%,rgba(58,15,90,0.85) 51.48%,rgba(0,0,0,1.00) 100%);
+    background-image: -o-linear-gradient(0deg,rgba(0,0,0,1.00) 0%,rgba(58,15,90,0.85) 51.48%,rgba(0,0,0,1.00) 100%);
+    background-image: linear-gradient(90deg,rgba(0,0,0,1.00) 0%,rgba(58,15,90,0.85) 51.48%,rgba(0,0,0,1.00) 100%);
+}
+wrapper {
+    width: 1366px;
+    margin: auto;
+    display: block;
+    padding: 16px;
+    color: #FEFEFE;
+    background-image: url(url);
+}
+.video2 {
+    margin-left: 106px;
+    margin-right: 29px;
+    margin-top: 46px;
+    margin-bottom: 67px;
+}
+.video3 {
+    margin-bottom: 67px;
+}
+.video1 {
+    width: 966px;
+    height: 543px;
+    display: inline;
+    margin-left: 203px;
+}
+.newstitle {
+    text-align: center;
+    font-family: "trinstam";
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    margin-top: 51px;
+    margin-bottom: 41px;
+    font-size: 28px;
+}
+section {
+    display: inline-block;
+    width: 350px;
+    background-color: rgb(60, 60, 60, .5);
+    margin-left: 28px;
+    padding-top: 42px;
+    padding-right: 30px;
+    padding-bottom: 42px;
+    padding-left: 30px;
+    margin-bottom: 100px;
+    margin-top: 9px;
+}
+.newsarticle {
+    font-size: 21px;
+    text-align: left;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+}
+.readmore {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 15px;
+}
+.readmore:hover{
+color: #FBEFB2;
+}
+
+.newsdate {
+    color: #848484;
+    font-size: small;
+}
+main div {
+    height: 217px;
+}
+.tourdiv {
+    transform: translateY(-480px);
+    font-family: 'Trinstam';
+    font-size: 17px;
+    padding-left: 80px;
+    line-height: 45px;
+    letter-spacing: 2px;
+}
+main img {
+    display: inline;
+    width: 100%;
+    height: 90%;
+}
+header h1 {
+    text-align: center;
+    height: 97px;
+    margin-top: 1px;
+}
+header h1 img {
+    height: 135px;
+    line-height: normal;
+    padding-top: 0px;
+    margin-top: -7px;
+}
+ul a li {
+    padding: 10px 25px;
+    display: inline-block;
+}
+video {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: -11px;
+}
+.tourvideo {
+    margin-bottom: -232px;
+}
+ul a li:hover {
+    background-color: #000000;
+    color: #FBEFB2;
+}
+nav {
+    background-color: #000000;
+    height: 87px;
+    padding-left: 0px;
+    font-size: 18px;
+    font-family: "Viaoda Libre", serif;
+    letter-spacing: 2.5px;
+    padding-top: 0.3px;
+}
+nav ul a {
+    color: #FFFFFF;
+}
+
+.musictitle {
+    text-align: center;
+    font-family: "trinstam";
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    margin-top: 51px;
+    margin-bottom: 41px;
+    font-size: 28px;
+}
+
+.h2title { 
+    text-align: center;
+    font-family: "trinstam";
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    margin-top: 51px;
+    margin-bottom: 41px;
+    font-size: 28px;
+}

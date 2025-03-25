@@ -72,6 +72,13 @@ color: #FBEFB2;
 main div {
     height: 217px;
 }
+.homevideo {
+    min-height: 100%;
+    max-width: 100%;
+    display: block;
+    width: 100%;
+    height: auto;
+}
 .tourdiv {
     transform: translateY(-480px);
     font-family: 'Trinstam';
@@ -107,6 +114,7 @@ video {
 }
 .homevideo source {
     max-width: 100%;
+    max-height: 100%;
 }
 .tourvideo {
     margin-bottom: -232px;

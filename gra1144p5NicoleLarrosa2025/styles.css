@@ -6,6 +6,15 @@ body {
     background-image: -moz-linear-gradient(0deg,rgba(0,0,0,1.00) 0%,rgba(58,15,90,0.85) 51.48%,rgba(0,0,0,1.00) 100%);
     background-image: -o-linear-gradient(0deg,rgba(0,0,0,1.00) 0%,rgba(58,15,90,0.85) 51.48%,rgba(0,0,0,1.00) 100%);
     background-image: linear-gradient(90deg,rgba(0,0,0,1.00) 0%,rgba(58,15,90,0.85) 51.48%,rgba(0,0,0,1.00) 100%);
+    height: auto;
+}
+.emaildiv {
+    display: inline-block;
+    width: 487px;
+    height: 408px;
+    text-align: left;
+    transform: translate(450px,-600px);
+    margin-top: -24px;
 }
 wrapper {
     width: 1366px;
@@ -14,6 +23,20 @@ wrapper {
     padding: 16px;
     color: #FEFEFE;
     background-image: url(url);
+}
+main {
+}
+.emailmain {
+    margin-bottom: -303px;
+}
+.emailtitle {
+    text-align: center;
+    font-family: "trinstam";
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    margin-top: 51px;
+    margin-bottom: 41px;
+    font-size: 28px;
 }
 .video2 {
     margin-left: 106px;
@@ -42,7 +65,7 @@ wrapper {
 section {
     display: inline-block;
     width: 350px;
-    background-color: rgb(60, 60, 60, .5);
+    /* [disabled]background-color: rgb(60, 60, 60, .5); */
     margin-left: 28px;
     padding-top: 42px;
     padding-right: 30px;
@@ -50,6 +73,58 @@ section {
     padding-left: 30px;
     margin-bottom: 100px;
     margin-top: 9px;
+}
+.blogsection {
+    background-color: rgba(58,44,58,1.00);
+    width: 359px;
+    padding-right: 41px;
+    margin-left: 16px;
+    border-radius: 35px;
+    height: 322px;
+}
+.blogmain {
+    text-align: center;
+    font-size: 16px;
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    padding-top: 16px;
+}
+.blogvideo {
+    width: 408px;
+    height: 266px;
+    padding-left: 0px;
+    margin-left: -19px;
+    border-radius: 10px;
+}
+.news1 {
+    background-color: rgb(60, 60, 60, .5);
+}
+.news3 {
+    background-color: rgb(60, 60, 60, .5);
+}
+.news2 {
+    background-color: rgb(60, 60, 60, .5);
+}
+.merchsection {
+    margin-top: -64px;
+    margin-bottom: 37px;
+}
+.merchname {
+    font-family: "trinstam";
+    text-align: center;
+    font-size: 18px;
+}
+.merchprice {
+    text-align: center;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.merchprice:hover{
+    color: #FBEFB2;
+}
+.albumsection {
+    width: 366px;
+    height: 109px;
+    margin-left: 17px;
+    margin-bottom: 30px;
 }
 .newsarticle {
     font-size: 21px;
@@ -72,12 +147,37 @@ color: #FBEFB2;
 main div {
     height: 217px;
 }
+.privacydiv {
+    margin-top: -116px;
+    padding-bottom: 69px;
+    border-bottom: thin solid #FFFFFF;
+    background-color: rgb(60, 60, 60, .5);
+    padding-top: 5px;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+.form {
+    border-bottom: medium solid #FFFFFF;
+    padding-bottom: 39px;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    font-size: 18px;
+}
+.musicdiv {
+    width: 519px;
+    display: inline-block;
+    padding-left: 119px;
+    margin-top: 30px;
+    margin-bottom: -31px;
+    margin-right: -51px;
+}
 .homevideo {
-    min-height: 100%;
     max-width: 100%;
-    display: block;
-    width: 100%;
-    height: auto;
+    max-height: 100%;
+    width: 1366px;
+    display: inline;
+}
+.homevideo1 {
+    width: 1366px;
 }
 .tourdiv {
     transform: translateY(-480px);
@@ -91,6 +191,34 @@ main img {
     display: inline;
     width: 100%;
     height: 90%;
+}
+.image6 {
+    width: 546px;
+}
+.image1 {
+    width: 528px;
+}
+.image2 {
+    width: 281px;
+}
+.image4 {
+    width: 529px;
+}
+.image3 {
+    width: 32%;
+}
+.image5 {
+    width: 26%;
+}
+.privacylogo {
+    height: 120px;
+    transform: translate(30px,-540px);
+    width: 310px;
+}
+.emailphoto {
+    padding-bottom: 0px;
+    display: inline;
+    margin-bottom: -353px;
 }
 header h1 {
     text-align: center;
@@ -146,12 +274,21 @@ nav ul a {
     font-size: 28px;
 }
 
-.h2title { 
+.h2title {
     text-align: center;
     font-family: "trinstam";
     letter-spacing: 2px;
     word-spacing: 1px;
     margin-top: 51px;
     margin-bottom: 41px;
-    font-size: 28px;
+    font-size: 30px;
+}
+.h2title2 {
+    text-align: center;
+    font-family: "trinstam";
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    margin-top: 32px;
+    margin-bottom: 27px;
+    font-size: 30px;
 }

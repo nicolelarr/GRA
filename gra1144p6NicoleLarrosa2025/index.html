@@ -12,13 +12,40 @@
 	
 <style type="text/css">
 body {
-    margin: 0;
+    margin: 0px;
     /* [disabled]background-color: #C4C0C0; */
 }
 section {
     width: 48%;
     height: 1000px;
     display: inline-block;
+}
+.otheritems {
+    display: inline-block;
+    margin-left: 99px;
+    /* [disabled]margin-right: -317px; */
+    margin-top: 108px;
+    height: 609px;
+    width: 330px;
+}
+.extraprices {
+    font-family: "Gowun Dodum", sans-serif;
+    font-size: 15px;
+    margin-top: -8px;
+}
+.itemtitle {
+    font-family: "Gowun Dodum", sans-serif;
+}
+.itemtitle:hover {
+    cursor: pointer;
+	color: #717171
+}
+.otheritems .extraitems {
+    width: 313px;
+    height: auto;
+}
+.extraitems:hover {
+    cursor: pointer;
 }
 .clothingimages {
     position: relative;
@@ -36,13 +63,23 @@ section {
 }
 footer {
     padding: 8px;
-    background-color: #737373;
+    border-top-style: solid;
+    border-top-width: thin;
+    text-align: center;
+    font-family: "Gowun Dodum", sans-serif;
 }
 wrapper {
     width: 1366px;
     margin: auto;
     display: block;
-    background-color: #FFFFFF;
+}
+h5 {
+    font-size: 23px;
+    text-align: center;
+    margin-top: -246px;
+    font-family: "Gowun Dodum", sans-serif;
+    ;
+    margin-bottom: -61px;
 }
 nav {
     /* [disabled]background-color: #777676; */
@@ -50,17 +87,54 @@ nav {
     border-bottom: 0.5px solid #000000;
 }
 nav ul {
+    margin-left: 36px;
+    font-family: "Gowun Dodum", sans-serif;
+}
+.search {
+    height: 23px;
+    margin-left: 15px;
+    margin-right: 8px;
+}
+.search:hover {
+    cursor: pointer;
+	transform: translateY(-3px);
+}
+.icon:hover {
+    cursor: pointer;
+	transform: translateY(-3px);
+}
+.bag:hover {
+    cursor: pointer;
+	transform: translateY(-3px);
+}
+.bag {
+    height: 23px;
+    margin-right: 8px;
+}
+.icon {
+    height: 23px;
+    margin-right: 8px;
+}
+input {
+    border-top-width: thin;
+    border-top-style: solid;
+    border-radius: 4px;
 }
 ul {
     display: inline-block;
-    margin-left: 145px;
+    margin-left: 126px;
 }
-li {
+.nav {
     display: inline-block;
     margin-right: 81px;
 }
-li:hover {
-    color: #7B7B7B;
+.nav:hover {
+    color: #717171;
+    cursor: pointer;
+}
+.product {
+    display: block;
+    font-family: "Gowun Dodum", sans-serif;
 }
 header {
     height: 100px;
@@ -73,14 +147,46 @@ header {
     margin-bottom: 0px;
     height: 100px;
 }
+	.logo:hover{
+		
+		cursor: pointer;
+	}
+	
 button {
-    width: 50px;
-    margin: 10px;
-    height: 50px;
+    width: 12%;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 38px;
+    /* [disabled]border-color: #676767; */
+    border-width: 2px;
 }
+
+ .buttonsize {
+    margin-left: 11px;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    height: 29px;
+    margin-right: 0px;
+    border-width: thin;
+}
+.buttonsize:hover {
+    background-color: #E3E3E3;
+	cursor: pointer;
+}
+
+
+
 #pinkswatch {
     background-color: #f7d4db;
     border-radius: 54px;
+    border-width: 1px;
+}
+#pinkswatch:hover {
+    border-width: 2px;
+	cursor: pointer;
+	transform: translateY(-5px);
 }
 #purpleswatch {
     background-color: #c7c4cb;
@@ -88,6 +194,12 @@ button {
 #blueswatch {
     background-color: #456885;
     border-radius: 68px;
+    border-width: 1px;
+}
+#blueswatch:hover {
+    border-width: 2px;
+	cursor: pointer;
+	transform: translateY(-5px);
 }
 #greenswatch {
     background-color: #ceddc2;
@@ -95,16 +207,90 @@ button {
 #whiteswatch {
     background-color: #F4F0E5;
     border-radius: 69px;
+    border-width: 1px;
+}
+#whiteswatch:hover {
+    /* [disabled]border-color: #000000; */
+    border-width: 2px;
+	cursor: pointer;
+	transform: translateY(-5px);
 }
 .description {
     width: auto;
     margin-top: 73px;
 }
+ol {
+    line-height: 25px;
+    margin-top: -10px;
+}
+.prodesc {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    margin-top: 49px;
+}
+	
+	.care{
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    margin-top: 26px;
+	}
+h3 {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: thin solid #3B3B3B;
+    height: 27px;
+    border-radius: 21px;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 7px;
+    margin-top: 38px;
+}
+h3:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+	cursor: pointer;
+}
+.size {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    margin-bottom: 4px;
+    margin-top: 34px;
+}
+.color {
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 45px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.description h2 {
+    border-bottom: thin inset #ADA9AA;
+    padding-bottom: 27px;
+    font-family: "Gowun Dodum", sans-serif;
+    font-size: 20px;
+    margin-top: 0px;
+}
+.hot {
+    background-color: #CE3437;
+    margin-right: 309px;
+    color: #FFFFFF;
+    padding-left: 6px;
+    padding-right: 0px;
+    border-radius: 8px;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-size: small;
+}
 .description h1 {
     font-size: 24px;
     font-family: "Gowun Dodum", sans-serif;
     ;
-    ;   
+    ;
+    padding-top: 1px;
+}
+.extraprices:hover {
+    color: #717171;
+    cursor: pointer;
+    text-shadow: 0px 0px;
+    text-decoration: underline;
+    text-decoration-color: light grey;
 }
 </style>
 <script type="text/javascript">
@@ -148,15 +334,25 @@ function MM_showHideLayers() { //v9.0
 	
   <nav>
   <ul>
-        <li>Bestsellers</li>
-        <li>Tops</li>
-        <li>Bottoms</li>
-        <li>Dresses</li>
-        <li>Demin</li>
-        <li>Sweaters</li>
-        <li>Shoes</li>
-	  <li>Accessories</li>
+        <li class="nav">Bestsellers</li>
+        <li class="nav">Tops</li>
+        <li class="nav">Bottoms</li>
+        <li class="nav">Dresses</li>
+        <li class="nav">Demin</li>
+        <li class="nav">Sweaters</li>
+        <li class="nav">Shoes</li>
+	  <li class="nav">Accessories</li>
 	  
+	<img class="search" src="AdobeStock_227446387.png" alt/>
+	  
+	   
+	 <img class="icon" src="icon.png" alt/>
+	   
+	 
+	<img  class="bag" src="shoppingbag.png" alt/> 
+	
+	  
+	 
       </ul>
   </nav>
 	
@@ -174,12 +370,85 @@ function MM_showHideLayers() { //v9.0
 	  
 <section class="description">
 	
+	<p class="hot">HOT</p>
+	
 	<h1>V-neck Button Flower Cardigan</h1>
 	
+	<h2>$34.00</h2>
+	
+	<p class="color">Color</p>
 <button id="whiteswatch" onClick="MM_showHideLayers('white-dress','','hide','purpe-dress','','hide','green-dress','','show')"></button>
 <button id="blueswatch" onClick="MM_showHideLayers('purpe-dress','','show','green-dress','','hide','white-dress','','hide')"></button>
 <button id="pinkswatch" onClick="MM_showHideLayers('white-dress','','show','purpe-dress','','hide','green-dress','','hide')"></button>
+	
+	
+	<br>
+	
+	<p class="size" style="width: auto">Size</p>
+		
+	<button class="buttonsize">0</button>
+		<button class="buttonsize">2</button>
+		<button class="buttonsize">4</button>
+		<button class="buttonsize" style="/* [disabled]border-width: medium; */">6</button>
+		<button class="buttonsize">8</button>
+	<button class="buttonsize">10</button>
+	
+	
+	<h3>Add To Bag</h3>
+	
+	<h4 class="prodesc">Product Description</h4>
+	<ol>
+	  <li class="product">- Composition: 100% Polyester</li>
+		 <li class="product">- Fit Type: Regular</li>
+		<li class="product">- Neckline: V-neck</li>
+		<li class="product">- Clothing Detail: Embroidery, Flower, Button</li>
+		
+		
+	  </ol>
+	
+		<h4 class="care">Care Instruction</h4>
+	<ol>
+	  <li class="product">- Handwash</li>
+		 <li class="product">- Do Not Bleach</li>
+		<li class="product">- Dry Flat</li>
+		<li class="product">- Iron on Low Heat</li>
+		
+		
+	  </ol>
+	
 </section>
+	  
+	  	<h5>You May Also Like..</h5>
+	  
+	  <section class="otheritems"> 
+		  <img class="extraitems" src="extra1.jpg" alt/>
+		  
+		  <p class="itemtitle">Floral Knit Cardigan</p>
+		  
+		  <p class="extraprices">$36.00</p>
+		  
+	  </section>
+	  
+	  
+	   <section class="otheritems"> 
+		  <img class="extraitems" src="extra2.jpg" alt/>
+		   
+		   <p class="itemtitle">Cherry Button Cardigan</p>
+		   
+		   <p class="extraprices">$42.00</p>
+		  
+	  </section>
+	  
+	  
+	   <section class="otheritems"> 
+		  <img class="extraitems" src="extra3.jpg" alt/>
+		   
+		   <p class="itemtitle">Deep V Floral Cardigan</p>
+		   
+		   <p class="extraprices">$32.00</p>
+		  
+	  </section>
+	  
 	  
 	  
   </main>

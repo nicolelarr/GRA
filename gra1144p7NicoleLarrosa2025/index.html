@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Travelocity | Nicole Larrosa, 2025</title>
+<style type="text/css">
+body {
+    margin: 0px;
+    background-image: url(AdobeStock_205817434.jpeg);
+    background-color: #354E4A;
+    background-position: 0% 100px;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;  
+}
+header {
+    height: 100px;
+    /* [disabled]background-color: #8FDBF9; */
+}
+wrapper {
+    display: block;
+    margin: auto;
+    width: 1229px;
+    background-color: rgba(255,255,255,0.2);
+}
+footer {
+    font-size: 12px;
+    font-family: sans-serif;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    padding: 8px;
+    background-color: rgb(0,0,0,0.5);
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<header style="max-width: none"> </header>
+<wrapper>
+  <div id="Tabs1">
+    <ul>
+      <li><a href="#tabs-1"><img src="noun-airplane-7773580.png" alt="" width="480" height="480" class="icons"><br>
+      Flights</a></li>
+      <li><a href="#tabs-2"><img src="noun-hotel-7794551.png" alt="" width="549" height="549" class="icons"><br>
+      Hotels</a></li>
+      <li><a href="#tabs-3"><img src="noun-car-1733315.png" alt="" width="572" height="218" class="icons"><br>
+      Cars</a></li>
+      <li><a href="#tabs-4"><img src="noun-vacation-6929961.png" alt="" width="500" height="510" class="icons"><br>
+      Vacations</a>      </li>
+      <li><a href="#tabs-5"><img src="noun-cruise-7779637.png" alt="" width="378" height="274" class="icons"><br>
+      Cruises</a></li>
+    </ul>
+	  
+    <div id="tabs-1"> 
+	  <input type="text" placeholder="Leaving from">
+		<input type="text" placeholder="Going to ">
+		<label for="date" class="from">From:</label>
+        <input type="date" name="date" id="date">
+        <label for="date2">To:</label>
+        <input type="date" name="date2" id="date2">
+        <input type="submit" name="submit" id="submit" value="Submit">
+		
+	  </div>
+	  
+	  
+    <div id="tabs-2">
+      <p>Content 2</p>
+    </div>
+    <div id="tabs-3">
+      <p>Content 3</p>
+    </div>
+    <div id="tabs-4">
+      <p>Content 4</p>
+    </div>
+    <div id="tabs-5">
+      <p>Content 5</p>
+    </div>
+  </div>
+</wrapper>
+<footer> 
+<p> &copy; 2025, Nicole Larrosa. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>	</footer>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>

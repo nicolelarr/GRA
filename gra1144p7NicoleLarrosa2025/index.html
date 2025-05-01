@@ -2,27 +2,33 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Travelocity | Nicole Larrosa, 2025</title>
+<title>Travela | Nicole Larrosa, 2025</title>
 <style type="text/css">
 body {
     margin: 0px;
     background-image: url(AdobeStock_205817434.jpeg);
     background-color: #354E4A;
     background-position: 0% 100px;
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;  
+    height: 100vh;
+    border-top-right-radius: nanpx;
+    width: auto;
 }
 header {
-    height: 100px;
-    /* [disabled]background-color: #8FDBF9; */
+    height: 108px;
+    background-color: rgba(252,252,244,1.00);
 }
 wrapper {
     display: block;
     margin: auto;
     width: 1229px;
-    background-color: rgba(255,255,255,0.2);
+    /* [disabled]background-color: rgba(255,255,255,0.2); */
+}
+wrapper nav ul {
+    list-style-type: none;
+    display: inline;
 }
 footer {
     font-size: 12px;
@@ -33,17 +39,100 @@ footer {
     padding: 8px;
     background-color: rgb(0,0,0,0.5);
 }
+.hotel {
+    display: block;
+}
+.vacation {
+    width: 503px;
+}
+.logo {
+    height: 99px;
+    vertical-align: middle;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+wrapper nav ul li {
+    display: inline-block;
+    float: right;
+    /* [disabled]background-color: rgba(255,255,255,0.4); */
+    padding-right: 23px;
+    margin-top: 2px;
+    font-family: "Nunito", sans-serif;
+}
+nav {
+    background-color: rgba(255,255,255,0.6);
+    width: 1205px;
+    margin-left: 21px;
+    height: 22px;
+    margin-bottom: 8px;
+    border-radius: 2px;
+}
+wrapper nav ul li:hover {
+    color: #eb8f00;
+    cursor: pointer;
+}
+.cloud2 {
+    height: 108px;
+    float: right;
+    margin-top: -121px;
+}
+.cloud3 {
+    height: 101px;
+    margin-left: 450px;
+    margin-top: -236px;
+}
+.cloud4 {
+    height: 100px;
+    margin-top: -132px;
+    float: right;
+    margin-right: 442px;
+}
 </style>
 <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
 <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
 <script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+	
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+	
+	
 </head>
 
 <body>
-<header style="max-width: none"> </header>
+<header style="max-width: none; background-color: rgba(168,226,236,0.38); background-image: -webkit-linear-gradient(270deg,rgba(85,213,236,1.00) 0%,rgba(255,255,255,1.00) 91.33%); background-image: -moz-linear-gradient(270deg,rgba(85,213,236,1.00) 0%,rgba(255,255,255,1.00) 91.33%); background-image: -o-linear-gradient(270deg,rgba(85,213,236,1.00) 0%,rgba(255,255,255,1.00) 91.33%); background-image: linear-gradient(180deg,rgba(85,213,236,1.00) 0%,rgba(255,255,255,1.00) 91.33%);"> 
+	
+
+	
+	<img class="logo" src="travellogo.png" alt/> 
+	
+		<img  class="cloud" src="AdobeStock_545763330.png" alt/> 
+	
+	<img  class="cloud3" src="AdobeStock_545763330.png" alt/> 
+	<img  class="cloud4" src="AdobeStock_545763330.png" alt/> 
+	
+		<img  class="cloud2" src="AdobeStock_545763330.png" alt/> 
+	
+	
+	
+	</header>
 <wrapper>
+	
+	<nav> 
+	<ul> 
+		<li> Login </li>
+		<li> Contact</li>
+		<li> Trips</li>
+		
+		
+		</ul>
+	</nav>
+	
+	
   <div id="Tabs1">
     <ul>
       <li><a href="#tabs-1"><img src="noun-airplane-7773580.png" alt="" width="480" height="480" class="icons"><br>
@@ -59,30 +148,161 @@ footer {
     </ul>
 	  
     <div id="tabs-1"> 
-	  <input type="text" placeholder="Leaving from">
-		<input type="text" placeholder="Going to ">
+	  <input type="text" placeholder="Leaving from..">
+		<input type="text" placeholder="Going to.. ">
 		<label for="date" class="from">From:</label>
         <input type="date" name="date" id="date">
         <label for="date2">To:</label>
         <input type="date" name="date2" id="date2">
+		
+		<section> 
         <input type="submit" name="submit" id="submit" value="Submit">
+		</section>
 		
 	  </div>
 	  
 	  
     <div id="tabs-2">
-      <p>Content 2</p>
+     <input type="text" class="destination" placeholder="Destination, Zip Code, or  Hotel Name..">
+		
+		
+				<section class="rooms"> 
+		<p>Rooms</p>
+		<select class="optionroom"> 
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+			<option value="5">5+</option>
+			</select>
+		</section>
+		
+	<section class="guests">
+			<p>Adults (18+)</p>
+		<select class="optionguests"> 
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+			<option value="5">5+</option>
+			</select>
+		</section>
+		
+		
+		<section class="guests">
+			<p>Children</p>
+		<select class="optionguests"> 
+			 <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+			<option value="5">5+</option>
+			</select>
+		</section>
+		
+		
+		
+		<br>
+	
+		
+		<label for="date" id="Checkin">Check-in:</label>
+	 <input type="date">
+			
+		
+		
+			
+			<label for="date" id="Checkin2">Check-out:</label>
+	 <input type="date">
+		
+
+			 
+		<br class="hotelbr">
+		
+		
+		<section> 
+        <input type="submit" name="submit" id="submit2" value="Submit">
+		</section>
+		
     </div>
+    
     <div id="tabs-3">
-      <p>Content 3</p>
+      <input type="text"  class="pickup" placeholder="Pick-up Location.. ">
+		 <input type="text" class="dropoff" placeholder="Drop-off Location.. ">
+		
+		<label for="date" class="from">From:</label>
+        <input type="date" name="date" id="date3">
+        <label for="date2">To:</label>
+        <input type="date" name="date2" id="date4">
+		
+		
+		
+				<section> 
+        <input type="submit" name="submit" id="submit3" value="Submit">
+		</section>
+		
+		
     </div>
     <div id="tabs-4">
-      <p>Content 4</p>
+      <input class="vacation" type="text" placeholder="Attraction or Activities.. ">
+		<input class="vacaydate" type="date">
+		
+		<input type="time">
+		
+				<section> 
+        <input type="submit" name="submit" id="submit4" value="Submit">
+		</section>
+		
     </div>
+	  
+	  
+	  
+	  
     <div id="tabs-5">
-      <p>Content 5</p>
+      <input type="text" class="whereto" placeholder="Where to?">
+		
+		<input class="cruisedate" type="date">
+		
+		<input class="cruisedate" type="date">
+		
+	<section class="cruise"> 
+			<p>Rooms</p>
+		<select class="cruiseoption"> 
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+			<option value="5">5+</option>
+			</select>
+		
+		</section>
+		
+		<section class="cruise"> 
+			<p>No. of Guests</p>
+		<select class="cruiseoption"> 
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+			<option value="5">5+</option>
+			</select>
+		
+		</section>
+		
+		
+	  
+		<section> 
+        <input type="submit" name="submit" id="submit5" value="Submit">
+		</section>
+	
+		
     </div>
+	  
   </div>
+	
+	
+	
+	
 </wrapper>
 <footer> 
 <p> &copy; 2025, Nicole Larrosa. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>	</footer>

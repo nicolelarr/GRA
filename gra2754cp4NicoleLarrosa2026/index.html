@@ -285,45 +285,47 @@ nav ul {
 }
 	
 	
-	.topnav.responsive a{
-    display:block;
+	.topnav .nav-menu {
+    display: none; /* Hide the menu by default on mobile */
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background-color: #A7BCAD;
 }
-.topnav.responsive a:not(:first-child) {
-     display: none;
-}
-	
-	
-.topnav .fa-times {
-    display: block;
-    padding: 10px;
-    color: white;
+
+/* Show menu when "responsive" class is added by JS */
+.topnav.responsive .nav-menu {
     display: flex;
-    justify-content: flex-end;
-    text-decoration: none;		
 }
-.topnav .fa-bars {
-    display: none;
-    text-decoration: none;
-}
-.topnav.responsive .fa-times {
-    display: none;
-}
-.topnav.responsive .fa-bars {
-    display: block;
-	padding: 10px;
-	color:white;	
-	display: flex;          
-    justify-content: flex-end;
-}
-	
-	
-	@media (min-width:600px) {
-.topnav a:not(:first-child),.topnav.responsive a:not(:first-child) {
-    display:inline-block;
-     }
+
 .topnav .icon {
-     display:none;
-     }
+    display: block;
+    padding: 15px;
+    font-size: 24px;
+    text-align: right;
+    color: white;
+    cursor: pointer;
+}
+
+/* Toggle between Bars and X icons */
+.topnav .fa-times { display: none; }
+.topnav.responsive .fa-bars { display: none; }
+.topnav.responsive .fa-times { display: inline-block; }
+
+/* Desktop Styles (600px and up) */
+@media (min-width: 600px) {
+    .topnav .icon {
+        display: none; /* Hide hamburger on desktop */
+    }
+    .topnav .nav-menu {
+        display: flex !important; /* Always show menu on desktop */
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .topnav .nav-menu li {
+        padding: 10px 20px;
+    }
 }
 	
 </style>
@@ -404,17 +406,18 @@ function myFunction() {
     <path d="M441.59,505.12c0-1.25.77-1.97,2.06-1.97.86,0,1.39.29,3.12,1.68l.72.58c1.54,1.25,3.22,1.82,5.14,1.82,4.27,0,7.15-2.98,7.15-7.3,0-5.47-4.9-8.45-13.01-9.27l-2.4-.24c-1.15-.12-1.54-.34-1.49-1.49l.43-10.75c.07-1.73,1.15-2.78,2.88-2.78,1.44,0,2.26.67,2.26,1.82,0,.43-.12.84-.38,1.25,3.74-1.82,7.49-2.54,9.82-2.54,2.78,0,4.66.91,4.66,2.64,0,1.85-1.7,2.66-4.78,2.52l-8.88-.41c-2.06-.1-2.35.1-2.69,2.4l-.58,3.96c11.74.48,17.38,4.85,17.38,12.03,0,6.72-4.8,11.28-11.91,11.28-5.38,0-9.5-2.26-9.5-5.23Z" fill="#fff"/>
   </g>
 </svg></header>
-  <nav class="topnav" id="myTopnav">
-  <a href="javascript:void(0);" class="icon"
-     onclick="myFunction()">
-  <i class="fa fa-bars"></i><i class="fa fa-times"></i>
-    <ul>
-      <a href="#about"><li>Home</li></a>
-      <a href="#gallery"><li>Guides</li></a>
-      <a href="#contact"><li>Supplies</li></a>
-    </ul>
-	</a>
-  </nav>
+ <nav class="topnav" id="myTopnav">
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    <i class="fa fa-times"></i>
+  </a>
+  
+  <ul class="nav-menu">
+    <li><a href="#about">Home</a></li>
+    <li><a href="#gallery">Guides</a></li>
+    <li><a href="#contact">Supplies</a></li>
+  </ul>
+</nav>
 	<section> 
   <div id="about">
 	  <h1>Welcome to Joe's Garden Club</h1>

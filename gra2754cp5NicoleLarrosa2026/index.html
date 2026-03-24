@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML 5 Drag-and Drop Project | Nicole Larrosa 2026</title>
+	
+	<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+	
+<style type="text/css">
+body {
+    margin: 0;
+    background-color: #D4BCBC;
+}
+wrapper {
+    width: 1366px;
+    margin: auto;
+    display: block;
+}
+wrapper div {
+    width: 600px;
+    border: thin solid black;
+    height: 600px;
+    margin: 25px;
+    display: inline-block;
+    vertical-align: top;
+}
+div img {
+    width: 100%;
+    height: auto;
+}
+</style>
+</head>
+
+<body>
+<wrapper>
+  <div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="img_w3slogo.gif" alt="" width="88" height="31" id="drag1" draggable="true" ondragstart="drag(event)"></div>
+	
+	
+  <div id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	
+	
+  <div id="drop3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="img_w3slogo-rev.gif" alt="" width="88" height="31" id="drag2" draggable="true" ondragstart="drag(event)"></div>
+	
+	
+  <div id="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</wrapper>
+</body>
+</html>

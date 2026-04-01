@@ -2,7 +2,100 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>HTML 5 Drag-and Drop Project | Nicole Larrosa 2026</title>
+<title>Pack Your Suitcase - Nicole Larrosa</title>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F5E8E8;
+  
+}
+
+h1 { text-align: center; 
+	color: #6A3E0B; 
+	margin-top: 20px; 
+	font-family: 'Segoe UI', sans-serif;
+	}
+	
+h2 { text-align: center; 
+	font-size: 18px; color: #572D00; 
+	font-weight: normal; 
+	font-family: 'Segoe UI', sans-serif;
+	}
+
+#wrapper {
+  width: 1250px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+#suitcase-base {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background-image: url(suitcase.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#internal-grid {
+  position: absolute;
+  top: 250px;    
+  left: 130px;   
+  width: 340px; 
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-cell img {
+  width: 115%;
+  height: 115%;
+  object-fit: contain;
+}
+	
+	.grid-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+	
+#inventory {
+  display: grid;
+  grid-template-columns: repeat(3, 140px);
+  gap: 15px
+  margin-top: 50px;
+}
+	
+.box {
+  width: 140px;
+  height: 140px;
+  border: 1px solid #6A3E0B;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box img {
+  max-width: 85%;
+  cursor: grab;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #888;
+  font-size: 14px;
+}
+</style>
 	
 	<script>
 function allowDrop(ev) {
@@ -19,45 +112,44 @@ function drop(ev) {
   ev.target.appendChild(document.getElementById(data));
 }
 </script>
-
-	
-<style type="text/css">
-body {
-    margin: 0;
-    background-color: #D4BCBC;
-}
-wrapper {
-    width: 1366px;
-    margin: auto;
-    display: block;
-}
-wrapper div {
-    width: 600px;
-    border: thin solid black;
-    height: 600px;
-    margin: 25px;
-    display: inline-block;
-    vertical-align: top;
-}
-div img {
-    width: 100%;
-    height: auto;
-}
-</style>
 </head>
 
 <body>
-<wrapper>
-  <div id="drop1" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="img_w3slogo.gif" alt="" width="88" height="31" id="drag1" draggable="true" ondragstart="drag(event)"></div>
-	
-	
-  <div id="drop2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-	
-	
-  <div id="drop3" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="img_w3slogo-rev.gif" alt="" width="88" height="31" id="drag2" draggable="true" ondragstart="drag(event)"></div>
-	
-	
-  <div id="drop4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-</wrapper>
+
+<h1>Pack Your Suitcase!</h1>
+<h2>Drag and drop the items into the suitcase</h2>
+
+<div id="wrapper">
+
+  <div id="suitcase-base">
+    <div id="internal-grid">
+      <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="grid-cell" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+  </div>
+
+  <div id="inventory">
+    <div class="box"><img id="drag1" src="items-06.png" draggable="true" ondragstart="drag(event)"></div>
+	  
+    <div class="box"><img id="drag2" src="items-05.png" draggable="true" ondragstart="drag(event)"></div>
+	  
+    <div class="box"><img id="drag3" src="items-04.png" draggable="true" ondragstart="drag(event)"></div>
+	  
+    <div class="box"><img id="drag4" src="items-03.png" draggable="true" ondragstart="drag(event)"></div>
+	  
+    <div class="box"><img id="drag5" src="items-02.png" draggable="true" ondragstart="drag(event)"></div>
+	  
+    <div class="box"><img id="drag6" src="items-01.png" draggable="true" ondragstart="drag(event)"></div>
+  </div>
+
+</div>
+
+  <footer>© 2026, Nicole Larrosa,
+    This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</footer>
+
 </body>
 </html>
